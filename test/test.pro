@@ -4,7 +4,7 @@
 
 QT += testlib
 TEMPLATE = app
-TARGET = testPkgInfo
+TARGET = test_PkgInfo
 INCLUDEPATH += .
 
 # Input

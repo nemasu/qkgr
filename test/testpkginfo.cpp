@@ -11,7 +11,7 @@ class TestPkgInfo : public QObject {
 void TestPkgInfo::testReadPkgJson() {
 	PkgDetail pkg = PkgInfo::GetPkgDetail("sed");
 	QVERIFY(pkg.name == "sed");
-	QVERIFY(pkg.installed == true);
+	QVERIFY(pkg.installed == "true");
 }
 
 QTEST_MAIN(TestPkgInfo)
