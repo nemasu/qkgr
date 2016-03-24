@@ -7,8 +7,10 @@ TARGET = qkgr
 INCLUDEPATH += .
 
 # Input
-HEADERS += pkginfo.h ui_main.h
+HEADERS += pkginfo.h pkgr.h ui_main.h
 FORMS += main.ui
-SOURCES += main.cpp pkginfo.cpp
+SOURCES += main.cpp pkginfo.cpp pkgr.cpp
 
 QT += widgets
+
+CONFIG += c++11

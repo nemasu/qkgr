@@ -3,6 +3,7 @@
 #include <QMainWindow>
 #include "ui_main.h"
 #include "pkginfo.h"
+#include "pkgr.h"
 
 #include <iostream>
 using std::cerr;
@@ -28,6 +29,12 @@ addPkgDetailToTable(QTableWidget *tableWidget, PkgDetail pkgDetail) {
 int
 main(int argc, char *argv[])
 {
+	QString user = qgetenv("USER");
+	if ( user != "root" ) {
+		cerr << "qkgr must be run with root privileges, please use \"gksu qkgr\"." << endl;
+		return -1;
+	}
+
     QApplication app(argc, argv);
     QMainWindow *mainWindow = new QMainWindow;
     Ui::MainWindow ui;

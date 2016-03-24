@@ -1,0 +1,4 @@
+-fPIC
+-I/usr/include/qt
+-I/usr/include/qt/QtWidgets
+-I/usr/include/qt/QtCore
